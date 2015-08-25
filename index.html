@@ -1,972 +1,543 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-<head>
-         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Homepage</title>
-        <meta name="keyword" content="">
-        <meta name="description" content="">
-        <meta name="HandheldFriendly" content="True">
-        <meta name="MobileOptimized" content="320">
-        <meta http-equiv="cleartype" content="on">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
 
-        <!-- For iOS web apps. Delete if not needed. https://github.com/h5bp/mobile-boilerplate/issues/94 -->
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-        <meta name="apple-mobile-web-app-title" content="">
+    <title>Flat & Scroll 2 - Bootstrap 3 Theme</title>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale = 1.0">
-        
-        <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
-        
-        <!--app css-->
-        <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="vendor/elegant_font/style.css" />
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
 
-        <link rel="stylesheet" href="vendor/flexslider/flexslider.css" />
-        <link rel="stylesheet" href="vendor/prettyphoto/css/prettyPhoto.css" />
-        <link rel="stylesheet" href="css/style.css" />
-
-        <!--<script type="text/javascript" language="javascript" src="http://www.datatables.net/release-datatables/media/js/jquery.js"></script>-->
-
-        <script src="js/jquery.min.js"></script>
-
-</head>
-    <body>
-        
-        
-<header id="head" class="head no-padding">
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
     
-    <img class="hidden-xs big-header" src="img/background/a.jpg">
-    <img class="visible-xs big-header" src="img/background/a_phone.jpg">
+	<link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/component.css">
 
-    <div class="content-wrap">
-        <h1>
-            <img src="img/header_typo.png" alt="New Line - Template of your bussiness">
-        </h1>
-    </div>
-    
-    <div class="hint">
-        <a href="">
-            <img src="img/background/arrow.png">
-        </a>
-    </div>
-    <div class="background"></div>
-</header>
-<div id="menu">
-    <nav class="navbar navbar-default" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-content">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">
-                    <img src="img/background/logo.jpg">
-                </a>
-            </div>
+	
+    <script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/Chart.js"></script>
+	<script src="assets/js/modernizr.custom.js"></script>
+	
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="menu-content">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#service">Services</a></li>
-                    <li><a href="#project">Portfolio</a></li>
-                    <li><a href="#testimonial">Testimonial</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-    </nav>
-</div>
-<section id="video" class="alt video" style="background: url('img/background/b.jpg')">
+	
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body data-spy="scroll" data-offset="0" data-target="#gn-menu">
+  	<!-- ========== MAIN MENU ========== -->
 	<div class="container">
+		<ul id="gn-menu" class="gn-menu-main">
+			<li class="gn-trigger">
+				<a class="gn-icon gn-icon-menu"><span>Menu</span></a>
+				<nav class="gn-menu-wrapper">
+					<div class="gn-scroller">
+						<ul class="gn-menu">
+							<li class="gn-search-item">
+								<input placeholder="Search" type="search" class="gn-search">
+								<a class="gn-icon gn-icon-search"><span>Search</span></a>
+							</li>
+							<li><a href="#home" class="gn-icon gn-icon-home smoothScroll">Home</a></li>
+							<li><a href="#services" class="gn-icon gn-icon-archive smoothScroll">Services</a></li>
+							<li><a href="#portfolio" class="gn-icon gn-icon-pictures smoothScroll">Portfolio</a></li>
+							<li><a href="#blog" class="gn-icon gn-icon-article smoothScroll">Blog</a></li>
+							<li><a href="#prices" class="gn-icon gn-icon-bars smoothScroll">Prices</a></li>
+							<li><a href="#contact" class="gn-icon gn-icon-envelop smoothScroll">Contact</a></li>
+						</ul>
+					</div><!-- /gn-scroller -->
+				</nav>
+			</li>
+			<li><a href="#home" class="smoothScroll">Flat & Scroll 2</a></li>
+		</ul>
+	</div><!-- /container -->
 		
-		<div class="row sec-header">
-    <div class="col-sm-6 col-sm-offset-3">
-        <i class="icon_lightbulb_alt"></i>
-        <h2>
-            Our vision        </h2>
-        
-        <div class="sep"></div>
-        
-            </div>
-</div>
+	
+	<!-- ========== HEADER SECTION ========== -->
+	<section id="home" name="home"></section>
+	<div id="headerwrap">
+		<div class="container">
+			<div class="col-lg-2"></div>
+			<div class="col-lg-8">
+				<img src="assets/img/logo.png">
+				<h1>Merit Design Agency</h1>
+				<h4>* Cooking Ideas Since 1998 *</h4>
+			</div>
+			<div class="col-lg-2">
+			</div>
+		</div><!-- /container -->
+	</div><!-- /headerwrap -->
+	
+	
+	<!-- ABOUT SECTION -->
+	<section id="services" name="services"></section>
+	<div class="container services">
+			<h3>Our Services</h3>
+			<hr>
+			<br>
+			<br>
+		<div class="col-lg-3 service-line">
+			<img src="assets/img/services/s01.png">
+			<h4>Social Media</h4>
+			<br>
+			<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+		</div><!-- /col-lg-3 -->
+		
+		<div class="col-lg-3 service-line">
+			<img src="assets/img/services/s02.png">
+			<h4>Research</h4>
+			<br>
+			<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+		</div><!-- /col-lg-3 -->
 
+		<div class="col-lg-3 service-line">
+			<img src="assets/img/services/s03.png">
+			<h4>Development</h4>
+			<br>
+			<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+		</div><!-- /col-lg-3 -->
 
-        <div class="row">
-        	<div class="col-sm-6 col-sm-offset-3">
-        		<h4>Design is transforming the whole world. We will help you to be a part of it</h4>
-                <i class="arrow_triangle-right_alt2" data-toggle="modal" data-target="#myModal"></i>
-        	</div>
-        </div>
-	</div>
+		<div class="col-lg-3 service-line">
+			<img src="assets/img/services/s04.png">
+			<h4>Design</h4>
+			<br>
+			<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+		</div><!-- /col-lg-3 -->
+	</div><!-- /container -->
+	
+	
+	<div class="container services">
+		<br>
+		<br>
+			<h3>Our Philosophy</h3>
+			<hr>
+			<br>
+			<br>
+			<h4>"OUR JOB IS TO BUILD BRANDS. OUR PASSION IS BUILDING BRANDS FROM THE INSIDE OUT."</h4>
+			<br>
+			<br>
+			<div class="col-lg-6">
+				<p>Employees and consumers. Two halves of a brand’s entirety, the whole of a brand’s audience. Sometimes these two halves have very different viewpoints, creating a weak spot in the brand story. Weakness tarnishes credibility. Brands that aren’t credible aren’t viable.</p>
+				<p>We squash weakness by designing the whole brand story. It’s crafted around the truism held by employees and consumers to create an experience that connects from the inside out.</p>
+			</div><!-- col-lg-6 -->
+			<div class="col-lg-6">
+				<p>By being true to the brand we represent, we elevate the audiences’ relationship to it. Like becomes love becomes a passion. Passion becomes advocacy. And we see the brand blossom from within, creating a whole story the audience embraces. That’s when the brand can truly flex its muscles.</p>
+				<p><img src="assets/img/signature.png" class="pull-right"></p>
+			</div><!-- col-lg-6 -->
+	</div><!-- container -->	
+	
+	
+	
+	<section id="portfolio" name="portfolio"></section>
+	<div id="foliowrap">
+		<div class="container">
+			<h3>Our Work</h3>
+			<br>
+			<br>
+			<div class="row">	
+			
+				<!-- PORTFOLIO IMAGE 1 -->
+				<div class="col-md-4 ">
+			    	<div class="grid mask">
+						<figure>
+							<img class="img-responsive" src="assets/img/portfolio/folio01.png" alt="">
+							<figcaption>
+								<h5>DASHBOARD</h5>
+								<a data-toggle="modal" href="#myModal" class="btn-primary btn-lg">Take a Look</a>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+			    	<br>
+				</div><!-- /col -->
+				
+				
+						 <!-- MODAL SHOW THE PORTFOLIO IMAGE. In this demo, all links point to this modal. You should create
+						      a modal for each of your projects. -->
+						      
+						  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						    <div class="modal-dialog">
+						      <div class="modal-content">
+						        <div class="modal-header">
+						          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						          <h4 class="modal-title">Project Title</h4>
+						        </div>
+						        <div class="modal-body">
+						          <p><img class="img-responsive" src="assets/img/portfolio/folio01.png" alt=""></p>
+						          <p>This project was crafted for Some Name corp. Detail here a little about your job requirements and the tools used. Tell about the challenges faced and what you and your team did to solve it.</p>
+						        </div>
+						        <div class="modal-footer">
+						          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						        </div>
+						      </div><!-- /.modal-content -->
+						    </div><!-- /.modal-dialog -->
+						  </div><!-- /.modal -->
+				
+				
+				<!-- PORTFOLIO IMAGE 2 -->
+				<div class="col-md-4">
+			    	<div class="grid mask">
+						<figure>
+							<img class="img-responsive" src="assets/img/portfolio/folio02.png" alt="">
+							<figcaption>
+								<h5>UI DESIGN</h5>
+								<a data-toggle="modal" href="#myModal" class="btn-primary btn-lg">Take a Look</a>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+			    	<br>
+				</div><!-- /col -->
+				
+				<!-- PORTFOLIO IMAGE 3 -->
+				<div class="col-md-4">
+			    	<div class="grid mask">
+						<figure>
+							<img class="img-responsive" src="assets/img/portfolio/folio03.png" alt="">
+							<figcaption>
+								<h5>ANDROID PAGE</h5>
+								<a data-toggle="modal" href="#myModal" class="btn-primary btn-lg">Take a Look</a>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+			    	<br>
+				</div><!-- /col -->
+			</div><!-- /row -->
 
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-        
-          <div class="modal-body">
-            <iframe id="vid" width="420" height="315" src="//www.youtube.com/embed/NYG7WvME8FI?enablejsapi=1&showinfo=0&rel=0" frameborder="0" allowfullscreen></iframe>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-</section>
-<section id="service" class="service">
-    <div class="container">
-        
-        <div class="row sec-header">
-    <div class="col-sm-6 col-sm-offset-3">
-        <i class="icon_documents_alt"></i>
-        <h2>
-            Our service        </h2>
-        
-        <div class="sep"></div>
-        
-                <h3 class="sub-title">
-            We passionately believe that good design can be made in every setting, and we are excited to share it with you        </h3>
-            </div>
-</div>
-
-        
-                        <div class="row">
-                <div class="col-sm-4 item">
-            <div class="">
-                <i class="icon_desktop"></i>
-                <h3>
-                    Web design                </h3>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetuer adepiscing eleit. Aenea commodo ligila egnet dolor. Aenean masse. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus music donec quam felis.</p>
-        </div>
-                                <div class="col-sm-4 item">
-            <div class="">
-                <i class="icon_mobile"></i>
-                <h3>
-                    Mobile development                </h3>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetuer adepiscing eleit. Aenea commodo ligila egnet dolor. Aenean masse. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus music donec quam felis.</p>
-        </div>
-                                <div class="col-sm-4 item">
-            <div class="">
-                <i class="icon_search"></i>
-                <h3>
-                    Branding                </h3>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetuer adepiscing eleit. Aenea commodo ligila egnet dolor. Aenean masse. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus music donec quam felis.</p>
-        </div>
-                </div>
-                                <div class="row">
-                <div class="col-sm-4 item">
-            <div class="">
-                <i class="icon_documents_alt"></i>
-                <h3>
-                    Print design                </h3>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetuer adepiscing eleit. Aenea commodo ligila egnet dolor. Aenean masse. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus music donec quam felis.</p>
-        </div>
-                                <div class="col-sm-4 item">
-            <div class="">
-                <i class="icon_camera_alt"></i>
-                <h3>
-                    Photography                </h3>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetuer adepiscing eleit. Aenea commodo ligila egnet dolor. Aenean masse. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus music donec quam felis.</p>
-        </div>
-                                <div class="col-sm-4 item">
-            <div class="">
-                <i class="icon_camera_alt"></i>
-                <h3>
-                    Email marketing                </h3>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetuer adepiscing eleit. Aenea commodo ligila egnet dolor. Aenean masse. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus music donec quam felis.</p>
-        </div>
-                </div>
-                        
-    </div>
-</section>
-<section id="project" class="project alt">
-    <div class="container">
-        
-        <div class="row sec-header">
-    <div class="col-sm-6 col-sm-offset-3">
-        <i class="icon_book_alt"></i>
-        <h2>
-            Our feature products        </h2>
-        
-        <div class="sep"></div>
-        
-                <h3 class="sub-title">
-            We passionately believe that good design can be made in every setting, and we are excited to share it with you        </h3>
-            </div>
-</div>
-
-    </div>
-    
-    <div class="container-fluid">
-        <div class="row">
-                        <div class="col-sm-6 col-md-3 item">
-                <img src="img/portfolio/a.jpg">
-                <div class="backdrop"></div>
-                <div class="overlay">
-                    <h4>
-                        Web design                    </h4>
-                    <p>
-                        <a class="view" href="img/portfolio/a.jpg" rel="prettyPhoto[gallery1]" title="You can add caption to pictures. You can add caption to pictures. You can add caption to pictures.">
-                            <i class="icon_search"></i>
-                        </a>
-                        <a href="">
-                            <i class="icon_link"></i>
-                        </a>
-                    </p>
-                </div>
-            </div>
-                        <div class="col-sm-6 col-md-3 item">
-                <img src="img/portfolio/b.jpg">
-                <div class="backdrop"></div>
-                <div class="overlay">
-                    <h4>
-                        Web design                    </h4>
-                    <p>
-                        <a class="view" href="img/portfolio/b.jpg" rel="prettyPhoto[gallery1]" title="You can add caption to pictures. You can add caption to pictures. You can add caption to pictures.">
-                            <i class="icon_search"></i>
-                        </a>
-                        <a href="">
-                            <i class="icon_link"></i>
-                        </a>
-                    </p>
-                </div>
-            </div>
-                        <div class="col-sm-6 col-md-3 item">
-                <img src="img/portfolio/c.jpg">
-                <div class="backdrop"></div>
-                <div class="overlay">
-                    <h4>
-                        Web design                    </h4>
-                    <p>
-                        <a class="view" href="img/portfolio/c.jpg" rel="prettyPhoto[gallery1]" title="You can add caption to pictures. You can add caption to pictures. You can add caption to pictures.">
-                            <i class="icon_search"></i>
-                        </a>
-                        <a href="">
-                            <i class="icon_link"></i>
-                        </a>
-                    </p>
-                </div>
-            </div>
-                        <div class="col-sm-6 col-md-3 item">
-                <img src="img/portfolio/d.jpg">
-                <div class="backdrop"></div>
-                <div class="overlay">
-                    <h4>
-                        Web design                    </h4>
-                    <p>
-                        <a class="view" href="img/portfolio/d.jpg" rel="prettyPhoto[gallery1]" title="You can add caption to pictures. You can add caption to pictures. You can add caption to pictures.">
-                            <i class="icon_search"></i>
-                        </a>
-                        <a href="">
-                            <i class="icon_link"></i>
-                        </a>
-                    </p>
-                </div>
-            </div>
-                        <div class="col-sm-6 col-md-3 item">
-                <img src="img/portfolio/e.jpg">
-                <div class="backdrop"></div>
-                <div class="overlay">
-                    <h4>
-                        Web design                    </h4>
-                    <p>
-                        <a class="view" href="img/portfolio/e.jpg" rel="prettyPhoto[gallery1]" title="You can add caption to pictures. You can add caption to pictures. You can add caption to pictures.">
-                            <i class="icon_search"></i>
-                        </a>
-                        <a href="">
-                            <i class="icon_link"></i>
-                        </a>
-                    </p>
-                </div>
-            </div>
-                        <div class="col-sm-6 col-md-3 item">
-                <img src="img/portfolio/f.jpg">
-                <div class="backdrop"></div>
-                <div class="overlay">
-                    <h4>
-                        Web design                    </h4>
-                    <p>
-                        <a class="view" href="img/portfolio/f.jpg" rel="prettyPhoto[gallery1]" title="You can add caption to pictures. You can add caption to pictures. You can add caption to pictures.">
-                            <i class="icon_search"></i>
-                        </a>
-                        <a href="">
-                            <i class="icon_link"></i>
-                        </a>
-                    </p>
-                </div>
-            </div>
-                        <div class="col-sm-6 col-md-3 item">
-                <img src="img/portfolio/g.jpg">
-                <div class="backdrop"></div>
-                <div class="overlay">
-                    <h4>
-                        Web design                    </h4>
-                    <p>
-                        <a class="view" href="img/portfolio/g.jpg" rel="prettyPhoto[gallery1]" title="You can add caption to pictures. You can add caption to pictures. You can add caption to pictures.">
-                            <i class="icon_search"></i>
-                        </a>
-                        <a href="">
-                            <i class="icon_link"></i>
-                        </a>
-                    </p>
-                </div>
-            </div>
-                        <div class="col-sm-6 col-md-3 item">
-                <img src="img/portfolio/h.jpg">
-                <div class="backdrop"></div>
-                <div class="overlay">
-                    <h4>
-                        Web design                    </h4>
-                    <p>
-                        <a class="view" href="img/portfolio/h.jpg" rel="prettyPhoto[gallery1]" title="You can add caption to pictures. You can add caption to pictures. You can add caption to pictures.">
-                            <i class="icon_search"></i>
-                        </a>
-                        <a href="">
-                            <i class="icon_link"></i>
-                        </a>
-                    </p>
-                </div>
-            </div>
-                    </div>
-    </div>
-    
-</section>
-<section id="testimonial" class="testimonial">
-    
-    <div class="container">
-        
-        <div class="row sec-header">
-    <div class="col-sm-6 col-sm-offset-3">
-        <i class="icon_chat_alt"></i>
-        <h2>
-            What customers say about us        </h2>
-        
-        <div class="sep"></div>
-        
-                <h3 class="sub-title">
-            We passionately believe that good design can be made in every setting, and we are excited to share it with you        </h3>
-            </div>
-</div>
-
-        <div class="row individual">
-            <div class="flexslider">
-                <ul class="slides">
-                                        <li class="item">
-                        <div class="col-sm-8 col-sm-offset-2">
-                            <p class="msg">Lorem ipsum dolor sit amet, consectetuer adepiscing eleit. Aenea commodo ligila egnet dolor. Aenean masse. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus music donec quam felis.</p>
-                            <div class="indicate"></div>
-                            <img src="img/testimonials/a.jpg" class="img-circle avatar">
-                            <p class="name">Johhny burlton</p>
-                            <p class="date">February 28, 2014</p>
-                        </div>
-                    </li>
-                                        <li class="item">
-                        <div class="col-sm-8 col-sm-offset-2">
-                            <p class="msg">Lorem ipsum dolor sit amet, consectetuer adepiscing eleit. Aenea commodo ligila egnet dolor. Aenean masse. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus music donec quam felis.</p>
-                            <div class="indicate"></div>
-                            <img src="img/testimonials/i.jpg" class="img-circle avatar">
-                            <p class="name">Johhny burlton</p>
-                            <p class="date">February 28, 2014</p>
-                        </div>
-                    </li>
-                                        <li class="item">
-                        <div class="col-sm-8 col-sm-offset-2">
-                            <p class="msg">Lorem ipsum dolor sit amet, consectetuer adepiscing eleit. Aenea commodo ligila egnet dolor. Aenean masse. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus music donec quam felis.</p>
-                            <div class="indicate"></div>
-                            <img src="img/testimonials/k.jpg" class="img-circle avatar">
-                            <p class="name">Johhny burlton</p>
-                            <p class="date">February 28, 2014</p>
-                        </div>
-                    </li>
-                                        <li class="item">
-                        <div class="col-sm-8 col-sm-offset-2">
-                            <p class="msg">Lorem ipsum dolor sit amet, consectetuer adepiscing eleit. Aenea commodo ligila egnet dolor. Aenean masse. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus music donec quam felis.</p>
-                            <div class="indicate"></div>
-                            <img src="img/testimonials/h.jpg" class="img-circle avatar">
-                            <p class="name">Johhny burlton</p>
-                            <p class="date">February 28, 2014</p>
-                        </div>
-                    </li>
-                                    </ul>
-            </div>
-        </div>
-        
-        <div class="row company">
-                        <div class="col-md-2 col-xs-6">
-                <img src="img/testimonials/b.jpg">
-            </div>
-                        <div class="col-md-2 col-xs-6">
-                <img src="img/testimonials/c.jpg">
-            </div>
-                        <div class="col-md-2 col-xs-6">
-                <img src="img/testimonials/d.jpg">
-            </div>
-                        <div class="col-md-2 col-xs-6">
-                <img src="img/testimonials/e.jpg">
-            </div>
-                        <div class="col-md-2 col-xs-6">
-                <img src="img/testimonials/f.jpg">
-            </div>
-                        <div class="col-md-2 col-xs-6">
-                <img src="img/testimonials/g.jpg">
-            </div>
-                    </div>
-        
-    </div>
-    
-</section>
-<section class="parallax empty" style="background-image: url('img/background/c.jpg')">
-    <div class="container"></div>
-</section>
-<section id="achievement" class="achievement alt">
-    <div class="container">
-        
-        <div class="row sec-header">
-    <div class="col-sm-6 col-sm-offset-3">
-        <i class="icon_heart_alt"></i>
-        <h2>
-            Our achievement        </h2>
-        
-        <div class="sep"></div>
-        
-            </div>
-</div>
-
-        
-        <div class="row">
-                        <div class="col-sm-3 item">
-                <div class="">
-                    <span>
-                        <i class="icon_images"></i>
-                    </span>
-                    <span class="stat">
-                        100                    </span>
-                </div>
-                <div class="sep">
-                    
-                </div>
-                <div>
-                    <span>Projects</span>
-                </div>
-            </div>
-                        <div class="col-sm-3 item">
-                <div class="">
-                    <span>
-                        <i class="icon_ribbon_alt"></i>
-                    </span>
-                    <span class="stat">
-                        20                    </span>
-                </div>
-                <div class="sep">
-                    
-                </div>
-                <div>
-                    <span>Awards</span>
-                </div>
-            </div>
-                        <div class="col-sm-3 item">
-                <div class="">
-                    <span>
-                        <i class="icon_contacts_alt"></i>
-                    </span>
-                    <span class="stat">
-                        100                    </span>
-                </div>
-                <div class="sep">
-                    
-                </div>
-                <div>
-                    <span>Customers</span>
-                </div>
-            </div>
-                        <div class="col-sm-3 item">
-                <div class="">
-                    <span>
-                        <i class="icon_drawer_alt"></i>
-                    </span>
-                    <span class="stat">
-                        100                    </span>
-                </div>
-                <div class="sep">
-                    
-                </div>
-                <div>
-                    <span>Open source</span>
-                </div>
-            </div>
-                    </div>
-        
-    </div>
-</section>
-<section id="team" class="team">
-    <div class="container">
-        
-        <div class="row sec-header">
-    <div class="col-sm-6 col-sm-offset-3">
-        <i class="icon_group"></i>
-        <h2>
-            Our team        </h2>
-        
-        <div class="sep"></div>
-        
-                <h3 class="sub-title">
-            We passionately believe that good design can be made in every setting, and we are excited to share it with you         </h3>
-            </div>
-</div>
-
-        
-        <div class="row team-wrapper">
-            
-                        <div class="col-sm-3 item">
-                <img src="img/team/a.jpg" class="">
-                
-                <div class="clearfix">
-                    
-                    <ul class="social clearfix">
-                        <li>
-                            <a class="i-wrapper" href="">
-                                <i class="social_linkedin"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="i-wrapper" href="">
-                                <i class="social_twitter"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="i-wrapper" href="">
-                                <i class="social_facebook"></i>
-                            </a>
-                        </li>
-                    </ul>
-                    
-                    <div class="info">
-                        <p class="name">Micheal Doe</p>
-                        <p class="pos">Web designer</p>
-                    </div>
-                </div>
-            </div>
-                        <div class="col-sm-3 item">
-                <img src="img/team/b.jpg" class="">
-                
-                <div class="clearfix">
-                    
-                    <ul class="social clearfix">
-                        <li>
-                            <a class="i-wrapper" href="">
-                                <i class="social_linkedin"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="i-wrapper" href="">
-                                <i class="social_twitter"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="i-wrapper" href="">
-                                <i class="social_facebook"></i>
-                            </a>
-                        </li>
-                    </ul>
-                    
-                    <div class="info">
-                        <p class="name">Dianne Burlton</p>
-                        <p class="pos">Web designer</p>
-                    </div>
-                </div>
-            </div>
-                        <div class="col-sm-3 item">
-                <img src="img/team/c.jpg" class="">
-                
-                <div class="clearfix">
-                    
-                    <ul class="social clearfix">
-                        <li>
-                            <a class="i-wrapper" href="">
-                                <i class="social_linkedin"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="i-wrapper" href="">
-                                <i class="social_twitter"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="i-wrapper" href="">
-                                <i class="social_facebook"></i>
-                            </a>
-                        </li>
-                    </ul>
-                    
-                    <div class="info">
-                        <p class="name">Saral Abott</p>
-                        <p class="pos">Web designer</p>
-                    </div>
-                </div>
-            </div>
-                        <div class="col-sm-3 item">
-                <img src="img/team/d.jpg" class="">
-                
-                <div class="clearfix">
-                    
-                    <ul class="social clearfix">
-                        <li>
-                            <a class="i-wrapper" href="">
-                                <i class="social_linkedin"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="i-wrapper" href="">
-                                <i class="social_twitter"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="i-wrapper" href="">
-                                <i class="social_facebook"></i>
-                            </a>
-                        </li>
-                    </ul>
-                    
-                    <div class="info">
-                        <p class="name">Olivier Perre</p>
-                        <p class="pos">Web designer</p>
-                    </div>
-                </div>
-            </div>
-                    </div>
-    </div>			
-</section><section id="pricing" class="pricing alt">
-    <div class="container">
-        
-        <div class="row sec-header">
-    <div class="col-sm-6 col-sm-offset-3">
-        <i class="icon_currency"></i>
-        <h2>
-            Pricing plan        </h2>
-        
-        <div class="sep"></div>
-        
-                <h3 class="sub-title">
-            We offer multiple packages, easy to go for different business needs and pricing plan. Let's choose our products and feel the quality.        </h3>
-            </div>
-</div>
-
-        
-        <div class="row">
-                        <article class="col-sm-4 ">
-                <ul class="item-wrapper">
-                    <li class="head">
-                        <i class="social_twitter"></i> 
-                        <p>Ultimate</p> 
-                    </li>
-                    <li class="price">
-                        <span class="unit">$</span>
-                        <span class="tag">99</span>
-                        <span class="duraction">/month</span>
-                    </li>
-
-                                        <li class="feature ">
-                        Web Design                    </li>
-                                        <li class="feature ">
-                        Web Development                    </li>
-                                        <li class="feature ">
-                        Photography                    </li>
-                                        <li class="feature ">
-                        Logo Design                    </li>
-                                        <li class="feature last">
-                        Marketing                    </li>
-                                        
-                    <li>
-                            <a class="btn btn-default" href="">Purchase Now</a>
-                    </li>
-                </ul>
-            </article>
-                        <article class="col-sm-4 emphasize">
-                <ul class="item-wrapper">
-                    <li class="head">
-                        <i class="social_twitter"></i> 
-                        <p>Standard</p> 
-                    </li>
-                    <li class="price">
-                        <span class="unit">$</span>
-                        <span class="tag">199</span>
-                        <span class="duraction">/month</span>
-                    </li>
-
-                                        <li class="feature ">
-                        Web Design                    </li>
-                                        <li class="feature ">
-                        Web Development                    </li>
-                                        <li class="feature ">
-                        Photography                    </li>
-                                        <li class="feature ">
-                        Logo Design                    </li>
-                                        <li class="feature last">
-                        Marketing                    </li>
-                                        
-                    <li>
-                            <a class="btn btn-default" href="">Purchase Now</a>
-                    </li>
-                </ul>
-            </article>
-                        <article class="col-sm-4 ">
-                <ul class="item-wrapper">
-                    <li class="head">
-                        <i class="social_twitter"></i> 
-                        <p>Diamond</p> 
-                    </li>
-                    <li class="price">
-                        <span class="unit">$</span>
-                        <span class="tag">299</span>
-                        <span class="duraction">/month</span>
-                    </li>
-
-                                        <li class="feature ">
-                        Web Design                    </li>
-                                        <li class="feature ">
-                        Web Development                    </li>
-                                        <li class="feature ">
-                        Photography                    </li>
-                                        <li class="feature ">
-                        Logo Design                    </li>
-                                        <li class="feature last">
-                        Marketing                    </li>
-                                        
-                    <li>
-                            <a class="btn btn-default" href="">Purchase Now</a>
-                    </li>
-                </ul>
-            </article>
-                    </div>
-    </div>
-</section>
-
-<section id="blog" class="blog">
-    <div class="container">
-
-        <div class="row sec-header">
-    <div class="col-sm-6 col-sm-offset-3">
-        <i class="icon_contacts_alt"></i>
-        <h2>
-            Our blog        </h2>
-        
-        <div class="sep"></div>
-        
-                <h3 class="sub-title">
-            We are team with high respinsibility and passion, deliver good products to other is our happiness everyday,        </h3>
-            </div>
-</div>
-
-
-        <div class="row blog">
-
-                        <div class="col-sm-4 item clearfix">
-
-                <a href="#">
-                    <img src="img/blog/a.jpg">
-                </a>
-
-                <div class="crd-info clearfix">
-                    <span class="date">
-                        May 25                    </span>
-                    <span class="avatar">
-                        <img src="img/team/a.jpg" class="img-circle">
-                    </span>
-                </div>
-
-                <div class="cont-info">
-                    <h3>
-                        <a href="">
-                            Blending magic                        </a>
-                    </h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetuer adepiscing eleit. Aenea commodo ligila egnet dolor. Aenean masse. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus music donec quam felis.                    </p>
-                </div>
-
-            </div>
-                        <div class="col-sm-4 item clearfix">
-
-                <a href="#">
-                    <img src="img/blog/b.jpg">
-                </a>
-
-                <div class="crd-info clearfix">
-                    <span class="date">
-                        May 25                    </span>
-                    <span class="avatar">
-                        <img src="img/team/b.jpg" class="img-circle">
-                    </span>
-                </div>
-
-                <div class="cont-info">
-                    <h3>
-                        <a href="">
-                            Creative design                        </a>
-                    </h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetuer adepiscing eleit. Aenea commodo ligila egnet dolor. Aenean masse. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus music donec quam felis.                    </p>
-                </div>
-
-            </div>
-                        <div class="col-sm-4 item clearfix">
-
-                <a href="#">
-                    <img src="img/blog/c.jpg">
-                </a>
-
-                <div class="crd-info clearfix">
-                    <span class="date">
-                        May 25                    </span>
-                    <span class="avatar">
-                        <img src="img/team/d.jpg" class="img-circle">
-                    </span>
-                </div>
-
-                <div class="cont-info">
-                    <h3>
-                        <a href="">
-                            Minimalism                        </a>
-                    </h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetuer adepiscing eleit. Aenea commodo ligila egnet dolor. Aenean masse. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus music donec quam felis.                    </p>
-                </div>
-
-            </div>
-            
-        </div>
-    </div>
-</section>
-    
-<section id="contact" class="contact alt">
-    <div class="container">
-        <div class="row sec-header">
-    <div class="col-sm-6 col-sm-offset-3">
-        <i class="icon_phone"></i>
-        <h2>
-            Get in touch        </h2>
-        
-        <div class="sep"></div>
-        
-                <h3 class="sub-title">
-            Fore more information related to our team & products, please contact us by phone, email or via our social network. Thank you.        </h3>
-            </div>
-</div>
-
-    </div>
-    
-    <div class="con-wrap">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-sm-4 item">
-                    <h3>Let's socialize</h3>
-                    <p>Aenean imperdiet, Etiam ultricies nisi vel augue, Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condiumentum rhoncus, sem</p>
-
-                    <ul>
-                        <li><i class="icon_house"></i>No 79 Brookside Ave Richmond Ca 97805</li>
-                        <li><i class="icon_phone"></i>Phone: (000) 000-0000</li>
-                        <li><i class="icon_tag"></i>Fax: (000) 000-0000</li>
-                        <li><i class="icon_mail"></i>themesjuice@gmail.com</li>
-                    </ul>
-                </div>
-
-                <div class="col-sm-8 item">
-                    <form>
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <input name="name" placeholder="Name">
-                                <input name="email" placeholder="Email">
-                                <input name="telephone"  placeholder="Telephone">
-                            </div>
-                             <div class="col-sm-8">
-                                 <textarea name="message"  placeholder="Message"></textarea>
-                                 <a class="btn btn-default">
-                                     Send
-                                 </a>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</section>
-<section id="map" class="map no-padding">
-	<div id="map_content"></div>
-	<div class="backdrop">
-		<h3>View on map</h3>
-	</div>
-</section><footer class="alt">
+				<!-- PORTFOLIO IMAGE 4 -->
+			<div class="row">	
+				<div class="col-md-4 ">
+			    	<div class="grid mask">
+						<figure>
+							<img class="img-responsive" src="assets/img/portfolio/folio04.png" alt="">
+							<figcaption>
+								<h5>PROFILE</h5>
+								<a data-toggle="modal" href="#myModal" class="btn-primary btn-lg">Take a Look</a>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+			    	<br>
+				</div><!-- /col -->
+				
+				<!-- PORTFOLIO IMAGE 5 -->
+				<div class="col-md-4">
+			    	<div class="grid mask">
+						<figure>
+							<img class="img-responsive" src="assets/img/portfolio/folio05.png" alt="">
+							<figcaption>
+								<h5>TWITTER STATUS</h5>
+								<a data-toggle="modal" href="#myModal" class="btn-primary btn-lg">Take a Look</a>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+			    	<br>
+				</div><!-- /col -->
+				
+				<!-- PORTFOLIO IMAGE 6 -->
+				<div class="col-md-4">
+			    	<div class="grid mask">
+						<figure>
+							<img class="img-responsive" src="assets/img/portfolio/folio06.png" alt="">
+							<figcaption>
+								<h5>PHONE MOCKUP</h5>
+								<a data-toggle="modal" href="#myModal" class="btn-primary btn-lg">Take a Look</a>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+				</div><!-- /col -->
+				<br>
+			</div><!-- /row -->
+		</div><!-- /container -->
+	</div><!-- /foliowrap -->
+	
+	
+	<section id="blog" name="blog"></section>
 	<div class="container">
-		<div class="row">
-			<div class="col-sm-12">
-				<ul class="clearfix">
-					<li>
-						<a href="">
-							<i class="social_facebook"></i>	
-						</a>
-					</li>
-					<li>
-						<a href="">
-							<i class="social_twitter"></i>	
-						</a>
-					</li>
-					<li>
-						<a href="">
-							<i class="social_pinterest"></i>	
-						</a>
-					</li>
-					<li>
-						<a href="">
-							<i class="social_dribbble"></i>	
-						</a>
-					</li>
-					<li>
-						<a href="">
-							<i class="social_linkedin"></i>	
-						</a>
-					</li>
-					<li>
-						<a href="">
-							<i class="social_rss"></i>	
-						</a>
-					</li>
-					<li>
-						<a href="">
-							<i class="social_flickr"></i>	
-						</a>
-					</li>
-				</ul>
+		<div class="row services">
+				<h3>We Are Storytellers</h3>
+				<hr>
+				<br>
+				<br>
+				
+			<div class="col-lg-6">
+				<!-- ACCORDION -->
+		            <div class="accordion" id="accordion2">
+		                <div class="accordion-group">
+		                    <div class="accordion-heading">
+		                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+		                        <date>Sep 15, 2013</date> <plus> + </plus> First Class Design
+		                        </a>
+		                    </div><!-- /accordion-heading -->
+		                    <div id="collapseOne" class="accordion-body collapse in">
+		                    	<br>
+		                        <div class="accordion-inner">
+		                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+								<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+								<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+								<p><img class="img-circle" src="assets/img/avatar.jpg" height="50px" width="50px"> - <i>Alex Webber.</i></p>
+								</div><!-- /accordion-inner -->
+		                    </div><!-- /collapse -->
+		                </div><!-- /accordion-group -->
+		                <br>
+		
+		                <div class="accordion-group">
+		                    <div class="accordion-heading">
+		                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+		                        <date>Sep 10, 2013</date> <plus> + </plus>  Retina Ready Theme
+		                        </a>
+		                    </div>
+		                    <div id="collapseTwo" class="accordion-body collapse">
+		                        <div class="accordion-inner">
+								<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+								</div><!-- /accordion-inner -->
+		                    </div><!-- /collapse -->
+		                </div><!-- /accordion-group -->
+		                <br>
+					</div><!-- Accordion -->
+				</div><!-- /col-lg-6 -->
+
+			<div class="col-lg-6">
+				<!-- ACCORDION -->
+		            <div class="accordion" id="accordion1">
+		                <div class="accordion-group">
+		                    <div class="accordion-heading">
+		                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseThree">
+		                        <date>Aug 22, 2013</date> <plus> + </plus> We Understand You
+		                        </a>
+		                    </div><!-- /accordion-heading -->
+		                    <div id="collapseThree" class="accordion-body collapse in">
+		                    	<br>
+		                        <div class="accordion-inner">
+
+		                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+								<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+								<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+								<p><img class="img-circle" src="assets/img/avatar02.jpg" height="50px" width="50px"> - <i>Laura Robinson.</i></p>
+								</div><!-- /accordion-inner -->
+		                    </div><!-- /collapse -->
+		                </div><!-- /accordion-group -->
+		                <br>
+		
+		                <div class="accordion-group">
+		                    <div class="accordion-heading">
+		                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseFour">
+		                        <date>Aug 10, 2013</date> <plus> + </plus>  Retina Ready Theme
+		                        </a>
+		                    </div>
+		                    <div id="collapseFour" class="accordion-body collapse">
+		                        <div class="accordion-inner">
+								<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+								</div><!-- /accordion-inner -->
+		                    </div><!-- /collapse -->
+		                </div><!-- /accordion-group -->
+		                <br>
+					</div><!-- Accordion -->
+			</div><!-- /col-lg-6 -->
+		</div><!-- /row -->
+	</div><!-- /container -->
+	
+	
+	<div id="testimonial">
+		<div class="container">
+			<div class="bs-example">
+				<div id="carousel-example-generic" class="carousel slide bs-docs-carousel-example">
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					</ol>
+				<div class="carousel-inner">
+					<div class="item active">
+						<h1>Work with Alex was a pleasure. He understood exactly what I wanted and created an awesome site for my company.</h1>
+						<br>
+						<h2>Brad Cooper</h2>
+					</div>
+					<div class="item">
+						<h1>I'm really happy with the results. Get 100% satisfaction is difficult but Alex got it without problems.</h1>
+						<br>
+						<h2>Joan Mathews</h2>
+					</div>
+					<div class="item">
+						<h1>Search no more. Alex is the guy that you need for your next project. Don't waste your time. He's the chosen one.</h1>
+						<br>
+						<h2>Trevor Bishop</h2>
+					</div>
+				</div>
+			<br>
+			<br>
+			<br>
 			</div>
 		</div>
 	</div>
-</footer>        
-        <script src="vendor/flexslider/jquery.flexslider.js"></script>
-        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-        <script src="vendor/jquery-scrollto.js"></script>
-        <script src="vendor/prettyphoto/js/jquery.prettyPhoto.js"></script>
-        <script src="vendor/jquery.animateNumber.min.js"></script>
-        <script src="vendor/imagesloaded.pkgd.min.js"></script>
-        <script src="js/main.js"></script>
-    </body>
+	</div>
+	
+	<section id="prices" name="prices"></section>
+	<div class="container">
+	<br>
+		<div class="row services">
+		<h3>Pricing Lists</h3>
+		<hr>
+		<br>
+		<br>
+			<div class="col-lg-3">
+                <!-- START PRICING TABLE -->
+                <div class="pricing-option">
+                    <div class="pricing-top">
+                        <span class="pricing-edition">Starter</span>
+                        <span class="price">
+                            <sup>$</sup>
+                            <span class="price-amount">19</span>
+                            <small>/mo</small>
+                        </span>
+                    </div>
+                    <ul>
+                        <li><strong>10GB</strong> Storage</li>
+                        <li>Up to <strong>10</strong> Users</li>
+                        <li><strong>5</strong> Domains</li>
+                        <li><strong>Free</strong> Setup</li>
+                        <li><strong>1-year</strong> Free support *</li>
+                    </ul>
+                    <a href="index.html#" class="pricing-signup">Sign up</a>
+                </div><!-- /pricing-option -->
+                <!-- END PRICING TABLE -->
+			</div><!-- /col -->
+			
+			<div class="col-lg-3">
+                <!-- START PRICING TABLE -->
+                <div class="pricing-option">
+                    <div class="pricing-top">
+                        <span class="pricing-edition">Standard</span>
+                        <span class="price">
+                            <sup>$</sup>
+                            <span class="price-amount">29</span>
+                            <small>/mo</small>
+                        </span>
+                    </div>
+                    <ul>
+                        <li><strong>20GB</strong> Storage</li>
+                        <li>Up to <strong>20</strong> Users</li>
+                        <li><strong>10</strong> Domains</li>
+                        <li><strong>Free</strong> Setup</li>
+                        <li><strong>2-year</strong> Free support *</li>
+                    </ul>
+                    <a href="index.html#" class="pricing-signup">Sign up</a>
+                </div><!-- /pricing-option -->
+                <!-- END PRICING TABLE -->
+			</div><!-- /col -->
+			
+			<div class="col-lg-3">
+                <!-- START PRICING TABLE -->
+                <div class="pricing-option">
+                    <div class="pricing-top">
+                        <span class="special-label">OFFER!</span>
+                        <span class="pricing-edition">Ultimate</span>
+                        <span class="price">
+                            <sup>$</sup>
+                            <span class="price-amount">69</span>
+                            <small>/mo</small>
+                        </span>
+                    </div>
+                    <ul>
+                        <li><strong>150GB</strong> Storage</li>
+                        <li><strong>Unlimited</strong> Users</li>
+                        <li><strong>50</strong> Domains</li>
+                        <li><strong>Free</strong> Setup</li>
+                        <li><strong>5-year</strong> Free support *</li>
+                    </ul>
+                    <a href="index.html#" class="pricing-signup">Sign up</a>
+                </div><!-- /pricing-option -->
+                <!-- END PRICING TABLE -->
+			</div><!-- /col -->
+			
+			<div class="col-lg-3">
+                <!-- START PRICING TABLE -->
+                <div class="pricing-option">
+                    <div class="pricing-top">
+                        <span class="pricing-edition">Business</span>
+                        <span class="price">
+                            <sup>$</sup>
+                            <span class="price-amount">49</span>
+                            <small>/mo</small>
+                        </span>
+                    </div><!-- /pricing-top -->
+                    <ul>
+                        <li><strong>40GB</strong> Storage</li>
+                        <li>Up to <strong>40</strong> Users</li>
+                        <li><strong>25</strong> Domains</li>
+                        <li><strong>Free</strong> Setup</li>
+                        <li><strong>3-year</strong> Free support *</li>
+                    </ul>
+                    <a href="index.html#" class="pricing-signup">Sign up</a>
+                </div><!-- /pricing-option -->
+                <!-- END PRICING TABLE -->
+			</div><!-- /col -->
+		</div><!-- /row -->
+	</div><!-- /container -->
+	
+	<section id="contact" name="contact"></section>
+	<div id="footerwrap">
+		<div class="container">
+			<div class="col-lg-5">
+				<h3>Address</h3>
+				<p>
+				Av. Greenville 987,<br/>
+				New York,<br/>
+				90873<br/>
+				United States
+				</p>
+			</div>
+			
+			<div class="col-lg-7">
+				<h3>Drop Me A Line</h3>
+				<br>
+				<form role="form" action="contact.php" method="post" enctype="plain"> 
+				  <div class="form-group">
+				    <label for="name1">Your Name</label>
+				    <input type="name" name="Name" class="form-control" id="name1" placeholder="Your Name">
+				  </div>
+				  <div class="form-group">
+				    <label for="email1">Email address</label>
+				    <input type="email" name="Mail" class="form-control" id="email1" placeholder="Enter email">
+				  </div>
+				  <div class="form-group">
+				  	<label>Your Text</label>
+				  	<textarea class="form-control" name="Message" rows="3"></textarea>
+				  </div>
+				  <br>
+				  <input type="submit" class="btn-large btn-theme"></input>
+				</form>
+			</div>
+		
+		</div>
+	
+	</div>
+	
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/retina.js"></script>
+	<script src="assets/js/classie.js"></script>
+    <script type="text/javascript" src="assets/js/smoothscroll.js"></script> 
+	<script src="assets/js/gnmenu.js"></script>
+	<script>
+		new gnMenu( document.getElementById( 'gn-menu' ) );
+	</script>  
+	<script>
+		$('.carousel').carousel({
+		  interval: 5500
+		  })
+	</script>
+	
+	
+  </body>
 </html>
